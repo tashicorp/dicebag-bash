@@ -2,8 +2,13 @@
  
 ### rollTest.sh ###
 
+function testNumArgs() {
+    cd ..
+    ./roll.sh
+    assertEquals 1 $?
+}
+
 function testHelpOption() {
-    cd .. 
     ./roll.sh help
     assertEquals 0 $? 
 }

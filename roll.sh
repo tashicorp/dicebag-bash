@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [ $# -lt 1 ]
+then
+  echo "Usage: $0 [d4|d6|d8|d12|d20]"
+  echo "Run help to see a list of available options."
+  exit 1
+fi
+
 case "$1" in
   'help' )
    echo "Pass one of the following arguments to this command to roll a die with the specified number of faces: d4, d6, d8, d12, d20." 
