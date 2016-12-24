@@ -1,6 +1,8 @@
 ## Dicebag 
 
-A simple Bash script you can use to roll standard tabletop RPG die (d4, d6, d8, d10, d12, d20) via the command line. Integration tests via the [shunit2](https://code.google.com/archive/p/shunit2/downloads) library.
+A simple Bash script you can use to roll standard tabletop RPG die (d4, d6, d8, d10, d12, d20) via the command line. Integration tests utilise the [shunit2](https://code.google.com/archive/p/shunit2/downloads) library.
+
+[!Dicebag](dicebag.jpg)
 
 #### Usage
 
