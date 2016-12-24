@@ -17,17 +17,7 @@ roll () {
 case "$1" in
   'help' )
     echo "Pass one of the following arguments to this command to roll a die with the specified number of faces: d4, d6, d8, d10, d12, d20." ;;
-  'd4' )
-    roll $1 ;;
-  'd6' )
-    roll $1 ;;
-  'd8' )
-    roll $1 ;;
-  'd10' )
-    roll $1 ;;
-  'd12' )
-    roll $1 ;;
-  'd20' )
+  d4|d6|d8|d10|d12|d20 )
     roll $1 ;;
    * )
      echo "Invalid option. Please run 'help' to see a list of valid options."

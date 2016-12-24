@@ -21,7 +21,7 @@ function testInvalidOption() {
 function testRolld4() {
     ./roll.sh d4 > result.txt
     rollResult=$(cat result.txt)
-    if [[ $rollResult =~ [1-4] ]]; then
+    if [ $rollResult -ge 1 -a $rollResult -le 4 ]; then
       result=true 
     else
       result=false 
@@ -31,7 +31,8 @@ function testRolld4() {
 
 function testRolld6() {
     ./roll.sh d6 > result.txt
-    if [[ $rollResult =~ [1-6] ]]; then
+    rollResult=$(cat result.txt)
+    if [ $rollResult -ge 1 -a $rollResult -le 6 ]; then
       result=true
     else
       result=false
@@ -41,7 +42,8 @@ function testRolld6() {
 
 function testRolld8() {
     ./roll.sh d8 > result.txt
-    if [[ $rollResult =~ [1-8] ]]; then
+    rollResult=$(cat result.txt)
+    if [ $rollResult -ge 1 -a $rollResult -le 8 ]; then
       result=true
     else
       result=false
@@ -51,7 +53,8 @@ function testRolld8() {
 
 function testRolld10() {
     ./roll.sh d10 > result.txt
-    if [[ $rollResult =~ [1-10] ]]; then
+    rollResult=$(cat result.txt)
+    if [ $rollResult -ge 1 -a $rollResult -le 10 ]; then
       result=true
     else
       result=false
@@ -60,8 +63,9 @@ function testRolld10() {
 }
 
 function testRolld12() {
-    ./roll.sh d6 > result.txt
-    if [[ $rollResult =~ [1-12] ]]; then
+    ./roll.sh d12 > result.txt
+    rollResult=$(cat result.txt)
+    if [ $rollResult -ge 1 -a $rollResult -le 12 ]; then
       result=true
     else
       result=false
@@ -71,7 +75,8 @@ function testRolld12() {
 
  function testRolld20() {
     ./roll.sh d20 > result.txt
-    if [[ $rollResult =~ [1-20] ]]; then
+    rollResult=$(cat result.txt)
+    if [ $rollResult -ge 1 -a $rollResult -le 20 ]; then
       result=true
     else
       result=false
