@@ -3,7 +3,7 @@
 if [ $# -lt 1 ]
 then
   echo "Usage: $0 [d4|d6|d8|d10|d12|d20]"
-  echo "Run help to see a list of available options."
+  echo "Run help to see a list of available die."
   exit 1
 fi
 
@@ -20,6 +20,6 @@ case "$1" in
   d4|d6|d8|d10|d12|d20 )
     roll $1 ;;
    * )
-     echo "Invalid option. Please run 'help' to see a list of valid options."
+     echo "Invalid dice type. Please run 'help' to see a list of valid options."
      exit 1
 esac
