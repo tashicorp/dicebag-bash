@@ -19,7 +19,7 @@ case "$1" in
     echo "Pass one of the following arguments to this command to roll a die with the specified number of faces: d4, d6, d8, d10, d12, d20." ;;
   d4|d6|d8|d10|d12|d20 )
     roll $1 ;;
-   * )
-     echo "Invalid dice type. Please run 'help' to see a list of valid options."
-     exit 1
+  * )
+    echo "Invalid dice type. Please run 'help' to see a list of valid options."
+    exit 1
 esac
