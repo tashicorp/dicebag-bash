@@ -30,4 +30,4 @@ roll d20
 
 #### Why?
 
-This ridiculously simple Bash script was created as a way for me to practice my Bash scripting skills. I also enjoy creating really small, toy CLI tools that do one tiny thing well.
+This ridiculously simple Bash script was created as a way for me to practice my Bash scripting skills. I also enjoy creating CLI tools that do one tiny, marginally useful thing well.
