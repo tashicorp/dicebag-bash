@@ -28,6 +28,16 @@ function testRolld4() {
     fi
     assertEquals true $result 
 }
+
+function testRolld6() {
+    ./roll.sh d6 > result.txt
+    if [[ $rollResult =~ [1-6] ]]; then
+      result=true
+    else
+      result=false
+    fi
+    assertEquals true $result
+}
  
 ## Call and Run all Tests
 . "../shunit2-2.1.6/src/shunit2"
