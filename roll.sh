@@ -2,17 +2,20 @@
 
 if [ $# -lt 1 ]
 then
-  echo "Usage: $0 [d4|d6|d8|d12|d20]"
+  echo "Usage: $0 [d4|d6|d8|d10|d12|d20]"
   echo "Run help to see a list of available options."
   exit 1
 fi
 
 case "$1" in
   'help' )
-   echo "Pass one of the following arguments to this command to roll a die with the specified number of faces: d4, d6, d8, d12, d20." 
+   echo "Pass one of the following arguments to this command to roll a die with the specified number of faces: d4, d6, d8, d10, d12, d20." 
    exit 0
    ;;
-  *) echo "Invalid option. Please run 'help' to see a list of valid options."
+   d4 )
+     echo "1"
+     ;;
+   *) echo "Invalid option. Please run 'help' to see a list of valid options."
     exit 1
 esac
 
